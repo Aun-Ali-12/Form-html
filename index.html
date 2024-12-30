@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <h1 style="text-decoration: underline; color: blueviolet;">Registration Form</h1>
+  <h1 style="text-decoration: underline; color: blueviolet">
+    Registration Form
+  </h1>
   <body>
     <form action="">
       <label for="name">Your Name:</label
@@ -34,15 +36,20 @@
         minlength="6"
       /><br /><br />
       <label for="date">Date of Birth:</label>
-      <input type="date" placeholder="date" value="date" id="date"><br><br>
+      <input
+        type="date"
+        placeholder="date"
+        value="date"
+        id="date"
+      /><br /><br />
       <label for="courses">Qualification:</label>
       <select name="courses" id="courses">
         <option selected disabled>Please select</option>
         <option value="">Matric</option>
         <option value="">Intermediate</option>
         <option value="">Undergraduate</option>
-        <option value="">Graduate</option>
-      </select><br><br>
+        <option value="">Graduate</option></select
+      ><br /><br />
       <input type="radio" name="gender" value="male" id="male" /><label
         for="male"
         >Male</label
@@ -52,9 +59,9 @@
         >Female</label
       >
       <input type="radio" name="gender" value="Nothing" id="Nothing" /><label
-      for="Nothing"
-      >Prefer not to say</label
-    ><br /><br />
+        for="Nothing"
+        >Prefer not to say</label
+      ><br /><br />
       <label for="file">Attach your profile: </label
       ><input
         name="file"
@@ -63,8 +70,13 @@
         type="file"
         accept="image/jpeg"
       /><br /><br />
-      <label for="comment">Suggest us about the courses we should include in our course scheme?</label><br><br>
-      <textarea name="comment" id="comment" cols="30" rows="10">I think </textarea><br><br>
+      <label for="comment"
+        >Suggest us about the courses we should include in our course
+        scheme?</label
+      ><br /><br />
+      <textarea name="comment" id="comment" cols="30" rows="10">
+I think </textarea
+      ><br /><br />
       <button type="submit">submit</button>
     </form>
   </body>
