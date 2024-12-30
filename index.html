@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <h1 style="text-decoration: underline; color: blueviolet;">Registration Form</h1>
   <body>
     <form action="">
-      <label for="name">Enter your name:</label
+      <label for="name">Your Name:</label
       ><input
         required
         id="name"
@@ -16,23 +17,50 @@
         maxlength="10"
         minlength="6"
       /><br /><br />
-      <label for="email">Enter your email:</label
+      <label for="email">Your email:</label
       ><input
         required
         id="email"
         placeholder="Enter your email"
         type="email"
       /><br /><br />
-      <label for="password">Enter your password:</label
+      <label for="text1">Your Father Name:</label
       ><input
         required
-        id="password"
-        placeholder="Enter your password"
-        type="password"
+        id="text1"
+        placeholder="Enter your Father Name"
+        type="name"
         maxlength="16"
         minlength="6"
       /><br /><br />
-      <label for="file">Attach your profile: </label><input name="file" id="file" value="file" type="file" accept="image/jpeg" ><br><br>
+      <label for="date">Date of Birth:</label>
+      <input type="date" placeholder="date" value="date" id="date"><br><br>
+      <label for="courses">Qualification:</label>
+      <select name="courses" id="courses">
+        <option selected disabled>Please select</option>
+        <option value="">Matric</option>
+        <option value="">Intermediate</option>
+        <option value="">Undergraduate</option>
+        <option value="">Graduate</option>
+      </select><br><br>
+      <input type="radio" name="gender" value="male" id="male" /><label
+        for="male"
+        >Male</label
+      >
+      <input type="radio" name="gender" value="female" id="female" /><label
+        for="female"
+        >Female</label
+      ><br /><br />
+      <label for="file">Attach your profile: </label
+      ><input
+        name="file"
+        id="file"
+        value="file"
+        type="file"
+        accept="image/jpeg"
+      /><br /><br />
+      <label for="comment">Suggest us about the courses we should include in our course scheme?</label><br><br>
+      <textarea name="comment" id="comment" cols="30" rows="10">I think </textarea><br><br>
       <button type="submit">submit</button>
     </form>
   </body>
